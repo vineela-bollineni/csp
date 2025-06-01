@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visualization</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4faff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #2c3e50;
+      padding: 20px;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .chart-section {
+      width: 500px;
+      height: 450px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+   canvas {
+  width: 350px !important;
+  height: 350px !important;
+  display: block;
+  margin: 0 auto;
+}
+
+
+    footer {
+      padding: 40px;
+      margin-top: 60px;
+      background-color: #ecf0f1;
+    }
+
+    .links {
+      text-decoration: none;
+      font-weight: bold;
+      color: #2980b9;
+    }
+
+    .links:hover {
+      text-decoration: underline;
+    }
+    
+.back-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0;
+  padding: 10px 15px;
+  background: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Visualization</h1>
+  </header>
+
+  <div class="chart-section">
+    <p>PIE CHART REPRESENTING COUNT OF PEOPLE CHOOSING URBAN AND RURAL</p>
+    <canvas id="pieChart1" width="100px", height="100px"></canvas>
+  </div>
+
+  <div class="chart-section">
+    <p>PIE CHART VISUALIZATION OF KEY FACTORS</p>
+    <canvas id="pieChart2"></canvas>
+  </div>
+
+  <div class="chart-section">
+    <p>BAR GRAPH VISUALIZATION OF KEY FACTORS</p>
+    <canvas id="barChart"></canvas>
+  </div>
+
+   <a href="index.html" class="back-button">Go Back!</a>
+
+   
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // PIE Chart 1 - Urban vs Rural
+    new Chart(document.getElementById('pieChart1'), {
+      type: 'pie',
+      data: {
+        labels: ['Urban', 'Rural'],
+        datasets: [{
+          data: [30, 20],
+          backgroundColor: ['blue', 'green']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    });
+ 
+
+    // PIE Chart 2 - Key Factors
+    new Chart(document.getElementById('pieChart2'), {
+      type: 'pie',
+      data: {
+        labels: ['Job', 'Education', 'Health Care', 'Transportation', 'Cost of Living', 'Environmental Concerns', 'Safety'],
+        datasets: [{
+          data: [20, 10, 7, 5, 4, 2, 2],
+          backgroundColor: ['red', 'blue', 'orange', 'purple', 'pink', 'green', 'yellow']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    });
+
+    // BAR Chart - Key Factors
+    new Chart(document.getElementById('barChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Job', 'Education', 'Health Care', 'Transportation', 'Cost of Living', 'Environmental Concerns', 'Safety'],
+        datasets: [{
+          label: '',
+          data: [20, 10, 7, 5, 4, 2, 2],
+          backgroundColor: ['red', 'blue', 'orange', 'purple', 'pink', 'green', 'yellow']
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { enabled: true }
+        },
+        scales: {
+          x: {
+            ticks: { display: true },
+            grid: { display: false }
+          },
+          y: {
+            ticks: { display: true },
+            grid: { display: false },
+            beginAtZero: true,
+            max: 25
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

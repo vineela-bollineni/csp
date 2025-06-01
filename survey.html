@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Data</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f9ff;
+    }
+
+    .survey-container {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .survey-container h2 {
+      color: red;
+      margin-bottom: 5px;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: 0 auto;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #4caf50;
+      text-align: center;
+    }
+
+    thead {
+      background-color: #d7e900;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #fdd9a0;
+      color: #333;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    
+.back-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0;
+  padding: 10px 15px;
+  background: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+    .survey-btn {
+      background-color: #e0c88d;
+    }
+  </style>
+</head>
+<body>
+  <div class="survey-container">
+    <h2>SURVEY DATA</h2>
+    <p>Below is the raw data collected from the survey:</p>
+    <a href="index.html" class="back-button">Go Back!</a>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Aadhar Number</th>
+            <th>Key Factors</th>
+            <th>More Access to Entertainment</th>
+            <th>Technology Stress</th>
+            <th>Move to Rural</th>
+            <th>Social Isolation</th>
+            <th>Harder to Find Privacy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>B.Sujatha</td>
+            <td>Female</td>
+            <td>969244593414</td>
+            <td>Access to healthcare, education, cost of living, transportation, safety</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>Urban</td>
+            <td>Urban</td>
+          </tr>
+          <tr>
+  <td>1</td>
+  <td>B.Sujatha</td>
+  <td>Female</td>
+  <td>969244593414</td>
+  <td>Access to healthcare, education, cost of living, transportation, safety</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>A.Padma</td>
+  <td>Female</td>
+  <td>296954173114</td>
+  <td>Community, support</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>R.Rathnamma</td>
+  <td>Female</td>
+  <td>623569874405</td>
+  <td>Job oppurtunities, Eduction, Environment</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>N.Pavan Kumar</td>
+  <td>Male</td>
+  <td>566685598099</td>
+  <td>Health care, Community</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>A.Rajaharshitha</td>
+  <td>Female</td>
+  <td>460485466286</td>
+  <td>Job oppurtunities, Education, Health Care, Cost of living</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>P.Lakshmi</td>
+  <td>Female</td>
+  <td>997150853955</td>
+  <td>Community, Safety</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>B.Priya Lasya</td>
+  <td>Female</td>
+  <td>602507705676</td>
+  <td>Safety, Community, Environment</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>M.Sujitha Bai</td>
+  <td>Female</td>
+  <td>380966779943</td>
+  <td>Job Oppurtunities, Education</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td>Ch.SivaParvathi</td>
+  <td>Female</td>
+  <td>661104367028</td>
+  <td>Community, Support, Safety</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>N.Mastanaiah</td>
+  <td>Male</td>
+  <td>242899909751</td>
+  <td>Job oppurtunities, Eduction, Environment</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>M.Lakshmi</td>
+  <td>Female</td>
+  <td>370480056413</td>
+  <td>Healthcare, Nature, Community Resources</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>Y.Uma Maheswari</td>
+  <td>Female</td>
+  <td>430710454447</td>
+  <td>Nature, Education, Job Oppurtunities</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Rural</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>A.Varshith</td>
+  <td>Male</td>
+  <td>957899031727</td>
+  <td>Community, support, Advanced technologies</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Rural</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>P.Manasa</td>
+  <td>Female</td>
+  <td>843624167960</td>
+  <td>Nature, Community</td>
+  <td>No</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>P.Narasimha Rao</td>
+  <td>Male</td>
+  <td>901224147404</td>
+  <td>Job Oppurtunities, Education, Health Care</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>V.Bujjamma</td>
+  <td>Female</td>
+  <td>458952385581</td>
+  <td>Health Care, community</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>U.Hindu</td>
+  <td>Female</td>
+  <td>923930176063</td>
+  <td>Cost of living, amenities</td>
+  <td>No</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>G.Suresh kumar</td>
+  <td>Male</td>
+  <td>66405442507</td>
+  <td>Family, Environmental concerns, Safety and security</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>P.Karuna Kumari</td>
+  <td>Female</td>
+  <td>705936112759</td>
+  <td>Access to health care, Cost of living, Education</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>N.Sai Meghana</td>
+  <td>Female</td>
+  <td>597562095579</td>
+  <td>Quality of life, Education, Job Oppurtunities</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>No</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>K.Susilamma</td>
+  <td>Female</td>
+  <td>641153844717</td>
+  <td>Availability of housing, Educational oppurtunites</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>Ch.Rajeswari</td>
+  <td>Female</td>
+  <td>334238096371</td>
+  <td>Environmental Concerns, Access to healthcare</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>Ch.Venkataramana</td>
+  <td>Male</td>
+  <td>310129760105</td>
+  <td>Education Oppurtunities</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>C.Lakshmi</td>
+  <td>Female</td>
+  <td>640461004275</td>
+  <td>Avialability of housing, Environmental quality</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>M.Ramesh singh</td>
+  <td>Male</td>
+  <td>996403243226</td>
+  <td>Safety and Security, Quality of life</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>V.Venkateswarlu</td>
+  <td>Male</td>
+  <td>240878272892</td>
+  <td>Access to healthcare, Environmental concerns</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>N.Parvathi</td>
+  <td>Female</td>
+  <td>860637041178</td>
+  <td>Job oppurtunities, Eduction, Environment</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>M.Prasanna</td>
+  <td>Female</td>
+  <td>593635750055</td>
+  <td>Access to healthcare, education, cost of living, transportation, safety</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>A.Murali</td>
+  <td>Male</td>
+  <td>658861012632</td>
+  <td>Safety and Security, Quality of life</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>K.Naga Lakshmi</td>
+  <td>Female</td>
+  <td>936573258441</td>
+  <td>Nature, Community</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>Ch.Srinivas</td>
+  <td>Male</td>
+  <td>522004914214</td>
+  <td>Avialability of housing, Environmental quality</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>B.Suresh</td>
+  <td>Male</td>
+  <td>474987770403</td>
+  <td>Access to health care, Cost of living, Education</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>K.Suguna</td>
+  <td>Female</td>
+  <td>491100065194</td>
+  <td>Family, Environmental concerns, Safety and security</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>V.Rishitha</td>
+  <td>Female</td>
+  <td>331284801328</td>
+  <td>Nature, Community</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>T.Gopal Singh</td>
+  <td>Male</td>
+  <td>388872149000</td>
+  <td>Cost of living, amenities</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>U.Mohan Rao</td>
+  <td>Male</td>
+  <td>983094962333</td>
+  <td>Job oppurtunities, Eduction, Environment</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>M.Mohan Babu</td>
+  <td>Male</td>
+  <td>345540074870</td>
+  <td>Quality of life, Education, Job Oppurtunities</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>T.Srikala</td>
+  <td>Female</td>
+  <td>373540224882</td>
+  <td>Nature, Education, Job Oppurtunities</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>B.Rukhmini</td>
+  <td>Female</td>
+  <td>92743856245</td>
+  <td>Avialability of housing, Environmental quality</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>P.Gayathri</td>
+  <td>Female</td>
+  <td>163986313945</td>
+  <td>Access to healthcare, education, cost of living, transportation, safety</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>R.Snehalatha</td>
+  <td>Female</td>
+  <td>527394856123</td>
+  <td>Job opportunities, Education, Health care</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>K.Vijaya</td>
+  <td>Female</td>
+  <td>634872190564</td>
+  <td>Community support, Safety</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>M.Venkata Reddy</td>
+  <td>Male</td>
+  <td>981274563210</td>
+  <td>Education, Job opportunities, Environment</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>44</td>
+  <td>P.Sujatha</td>
+  <td>Female</td>
+  <td>739182654309</td>
+  <td>Healthcare access, Quality of life</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>45</td>
+  <td>S.Rajesh</td>
+  <td>Male</td>
+  <td>420156789234</td>
+  <td>Safety, Community resources</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>No</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>46</td>
+  <td>R.Kavitha</td>
+  <td>Female</td>
+  <td>512367894301</td>
+  <td>Cost of living, Education, Health care</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>47</td>
+  <td>A.Naveen</td>
+  <td>Male</td>
+  <td>687594123045</td>
+  <td>Job opportunities, Environment</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>48</td>
+  <td>P.Sindhu</td>
+  <td>Female</td>
+  <td>792341658974</td>
+  <td>Community support, Safety, Education</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+<tr>
+  <td>49</td>
+  <td>K.Ramesh</td>
+  <td>Male</td>
+  <td>859632147098</td>
+  <td>Quality of life, Healthcare</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Rural</td>
+  <td>Rural</td>
+</tr>
+<tr>
+  <td>50</td>
+  <td>M.Priyanka</td>
+  <td>Female</td>
+  <td>964357812306</td>
+  <td>Education, Job opportunities, Cost of living</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Urban</td>
+  <td>Urban</td>
+</tr>
+        </tbody>
+      </table>
+</body>
+</html>

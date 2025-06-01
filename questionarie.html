@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="questionarie.css">
+</head>
+<body>
+    
+<div class="issues-container">
+    <div class="card issue-card">
+
+        <h2 class="form-title">
+            <span>📢</span> QUESTIONNAIRE
+        </h2>
+
+        <form>
+             
+            <div class="form-group">
+                <label for="name">Name :</label>
+                <input type="text" [(ngModel)]="issue.name" name="name" required />
+            </div>
+
+            
+            <div class="form-group">
+                <label for="gender">Gender :</label>
+                <select [(ngModel)]="issue.gender" name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="aadhaar">Aadhaar Number :</label>
+                <input type="text" [(ngModel)]="issue.aadhaar" name="aadhaar" required />
+            </div>
+
+            <div class="form-group">
+                <label for="place">Where do you currently live?</label>
+                <select [(ngModel)]="issue.place" name="place" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="urban">Urban</option>
+                    <option value="rural">Rural</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="time">How long have you lived in this area?</label>
+                <select [(ngModel)]="issue.time" name="time" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="less than 1">less than 1 year</option>
+                    <option value="1-5">1-5 years</option>
+                    <option value="5-10">5-10 years</option>
+                    <option value="10">More than 10 years</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="oset">Have you ever lived in the opposite setting?</label>
+                <select [(ngModel)]="issue.oset" name="set" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                </select>
+            </div>
+           
+            <div class="form-group">
+                <label for="description">If yes, what was your reason for moving? If no, ignore!</label>
+                <textarea [(ngModel)]="issue.description" name="description"></textarea>
+            </div>
+
+             <div class="form-group">
+                <label for="kf">What are the key factors you consider for choosing your current residential place?</label>
+                
+                    <input type="checkbox" id="kfjob" name="kf[]" value="job">
+                    <label for="kfjob">Job opportunities</label>
+                
+                    <input type="checkbox" id="kfjob" name="kf[]" value="job">
+                    <label for="kfjob">Cost of living</label>
+                 
+                    <input type="checkbox" id="kfjob" name="kf[]" value="job">
+                    <label for="kfjob">Quality of life</label>
+               
+                    <input type="checkbox" id="kfjob" name="kf[]" value="job">
+                    <label for="kfjob">Access to healthcare</label>
+                 
+                    <input type="checkbox" id="kfjob" name="kf[]" value="job">
+                    <label for="kfjob">Education opportunities</label>
+                 
+                    <input type="checkbox" id="kfjob" name="kf[]" value="job">
+                    <label for="kfjob">Safety and security</label>
+                
+                 
+                    <input type="checkbox" id="kfjob" name="kf[]" value="job">
+                    <label for="kfjob">Availability of housing</label>
+                
+                
+                    <input type="checkbox" id="kfjob" name="kf[]" value="job">
+                    <label for="kfjob">Environmental quality</label>
+                
+                 
+                    <input type="checkbox" id="kfjob" name="kf[]" value="job">
+                    <label for="kfjob">Family/social connections</label>
+               
+            </div>
+
+             <div class="form-group">
+                <label for="description">Do you think current place reach your Expectations? If no, what are the main issues you face?</label>
+                <textarea [(ngModel)]="issue.description" name="description"></textarea>
+            </div>
+
+            
+            <div class="form-group">
+                <label>where do people have more Access to Entertainment :</label>
+                <select [(ngModel)]="issue.entertainment" name="entertainment" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="u">Urban</option>
+                    <option value="r">Rural</option>
+                </select>
+            </div>
+
+             
+            <div class="form-group">
+                <label>Technology making rural life more stressful? :</label>
+                <select [(ngModel)]="issue.stress" name="stress" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            
+            <div class="form-group">
+                <label>Move to rural areas for mental peace rather than financial reasons? :</label>
+                <select [(ngModel)]="issue.ruralMentalPeace" name="ruralMentalPeace" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            
+            <div class="form-group">
+                <label>Social isolation a problem in both urban and rural areas? :</label>
+                <select [(ngModel)]="issue.isolation" name="isolation" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+           
+            <div class="form-group">
+                <label>Where is it harder to find privacy? :</label>
+                <select [(ngModel)]="issue.privacy" name="privacy" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="urban">Urban</option>
+                    <option value="rural">Rural</option>
+                </select>
+            </div>
+
+               <div class="form-group">
+                <label>Would you prefer to live in an urban or rural area in future?</label>
+                <select [(ngModel)]="issue.entertainment" name="entertainment" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="yes">Urban</option>
+                    <option value="no">Rural</option>
+                </select>
+            </div>
+               
+        </form>
+        <br>
+        <br>
+        <div class="row"> 
+        <a href="index.html" class="back-button">Go Back!</a>
+    </div>
+
+    </div>
+</div>
+
+</body>
+</html> 
